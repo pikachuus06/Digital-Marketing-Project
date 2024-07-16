@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <section id="home">
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h6 class="text-danger">AWARD WINNING</h6>
+                <h1>Digital Marketing Agency</h1>
+                <p>We're here to help your business thrive online. Whether you need to boost your online presence, drive traffic, or convert leads, our experts are ready to assist. Contact us today to start crafting your digital success story!</p>
+                <button class="btn btn-danger" id="contactUsBtn">Contact Us</button>
+            </div>
+            <div class="col-md-6">
+                <img src="images/girl with red hat.png" alt="Marketing Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Form -->
+    <div id="contactFormModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Talk to us</h2>
+            <form id="contactForm" action="https://getform.io/f/{your-getform-endpoint}" method="POST">
+                <div class="form-group">
+                    <label for="workEmail">Work email</label>
+                    <input type="email" class="form-control" id="workEmail" name="workEmail" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for = "firstname">First Name</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" required>
+                    </div>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="consent" name="consent" required>
+                    <label class="form-check-label" for="consent">I agree to the terms and conditions, and provide consent to send me communication.</label>
+                </div>
+                <button type="submit" class="btn btn-danger btn-block">Contact Us</button>
+            </form>
+        </div>
+    </div>
+    </section>
+</body>
+
+<!-- Spacer -->
+<div class="spacer"></div>
+
+<!--Service-->
+    
+    <body>
+        <section id="service">
+        <div class="container"> 
+            <h6 class="text-danger">WHAT WE DO</h6>
+            <h1>SERVICES PROVIDE FOR YOU</h1>
+            <p>we offer a comprehensive suite of digital marketing services tailored to meet your unique business needs.</p>
+            
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="images/adult-cold-enjoyment-fashion-preview.jpg" alt="Image 1" class="slide-image">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>WEB DEVELOPMENT</h3>
+                                <p>For more information click on read more.</p>
+                                <a href="https://www.fylehq.com" target="_blank" class="read-more">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/E8HwXySOQfSIvMjs0DBA_Divine_Nuetrality.jpg" alt="Image 2" class="slide-image">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>WEB DEVELOPMENT</h3>
+                                <p>For more information click on read more.</p>
+                                <a href="https://www.fylehq.com" target="_blank" class="read-more">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/premium-shopping-basket-filled-with-products-table-store_904847-102.jpg" alt="Image 3" class="slide-image">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>WEB DEVELOPMENT</h3>
+                                <p>For more information click on read more.</p>
+                                <a href="https://www.fylehq.com" target="_blank" class="read-more">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+    </body>
+
+    <!-- Spacer -->
+<div class="spacer"></div>
+
+<!--Project-->
+<body>
+    <section class="project-section">
+        <div class="container"> 
+            <h6 class="text-danger">OUR PROJECT</h6>
+            <h1>WHY WE ARE BEST</h1>
+        <div class="image-section">
+            <img id="mainImage" src="images/pexels-photo-4397918.jpeg" alt="Main Image">
+        </div>
+        <div class="content-section">
+             <div class="content-item" onclick="changeImage('images/shop-person-human-food.jpg')">
+                 <h3>COLDDRINK Agency</h3>
+                <p>our go-to spot for refreshing cold drinks! We offer a delightful range of beverages, from classic iced teas and lemonades to unique smoothies and specialty cold brews, all made with fresh ingredients. Whether you’re looking to cool down or treat yourself, our friendly staff and welcoming atmosphere will make your visit memorable.</p>
+            </div>
+            <div class="content-item" onclick="changeImage('images/pexels-shattha-pilabut-38930-135620.jpg')">
+                 <h3>BAGS & SANDEL Agency</h3>
+                <p>stylish sandals and bags! We offer a curated selection of trendy footwear and chic bags designed to complement any outfit. Our collection features quality craftsmanship and the latest styles, perfect for any occasion. Whether you're looking for comfortable sandals for a day out or a statement bag to elevate your look, we’ve got you covered. </p>
+             </div>
+            <div class="content-item" onclick="changeImage('images/images.jpg')">
+                <h3>TOYS Agency</h3>
+                <p>the ultimate destination for fun and imaginative play! Our toy shop offers a wide variety of high-quality toys for children of all ages, from educational games and creative crafts to cuddly plushies and exciting outdoor activities. We believe in the power of play to inspire creativity and learning, so we carefully select toys that spark joy and engagement. </p>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+
+<!-- Spacer -->
+<div class="spacer"></div>
+
+<!--Growth-->
+<body>
+    <section class="growth-section">
+        <h6 class="text-danger">EXPERTS GROWTH</h6>
+        <h3>OUR COMPANY GROWTH</h3>
+        <div class="growth-container">
+            <div class="growth-card">
+                <span class="icon">❤️</span>
+                <p class="number">199 +</p>
+                <p class="description">Satisfied Customers</p>
+            </div>
+            <div class="growth-card">
+                <span class="icon">⏰</span>
+                <p class="number">1591+</p>
+                <p class="description">Days Of Operation</p>
+            </div>
+            <div class="growth-card">
+                <span class="icon">✔️</span>
+                <p class="number">283 +</p>
+                <p class="description">Complete Projects</p>
+            </div>
+            <div class="growth-card">
+                <span class="icon">🏆</span>
+                <p class="number">75+</p>
+                <p class="description">Win Awards</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
